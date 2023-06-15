@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Yota Yamashitaのポートフォリオサイトです">
+    <!--descriptionは検索エンジンで調べた時に出てくる詳細の部分
+    contentに表示させたい内容を書き込む-->
+    <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic" rel="stylesheet">
+    <title>Yota Yamashita</title>
+</head>
+<body>
+    <!--Header-->
+    <header id="header">
+        <h1 class = "site-title">
+            <a href="#">
+                Yota Yamashita
+            </a>
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="https://www.twitter.com" target="_blank" rel="noopner noreferrer">
+                    <!--relのやつで脆弱性をカバー-->
+                    <img src="./twitter.png" alt="Twitter" class="icon"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <div id="main">
+        <picture> <!--画像をレスポンシブに対応させるためのタグ-->
+            <source media="(max-width: 600px)" srcset="./myimage.jpg">
+            <img src="./myimage.jpg" alt="">
+        </picture>
+    </div>
+
+    <!-- about -->
+    <section id="about" class="wrapper">
+        <h3 class="sec-title">About</h3>
+        <ul>
+            <h2>山下 陽太 / Yamashita Yota</h2>
+            <li>生年月日: 1999年1月28日</li>
+            <li>学歴: Queensland University of Technology (オーストラリア) 23年卒 / 国際ビジネス学士号</li>
+            <li>メールアドレス: yota.yamashita@gmail.com</li>
+            <li>電話番号: 090-3824-9951</li>
+            <p>在学中からテクノロジーの分野に興味があり、ノーコードアプリ開発プラットフォームの <a href="https://ja.adalo.com"> Adalo</a>を
+                趣味で触っていくうちに、プログラミングにも興味を持ちました。<br>
+                Pythonを独学で進めていく中で、プログラミングを用いた開発を通してアイディアを形に出来ること、様々な社会課題に取り組めることに魅力を感じました。<br>
+                自身が開発に携わったプロダクトで人々の生活を豊にしたいという思いが強まり、ビジネス職志望からITエンジニア志望へと進路を変更しました。
+            </p>
+        </ul>
+    </section>
+
+    <!-- Conctac -->
+    <section id="contact" class="wrapper">
+        <h2 class="set-title">Contact</h2>
+        <p>お問い合わせは以下のフォームから</p>
+        <d1>
+            <dt><label for="name">お名前</label></dt>
+            <dd><input type="text" id = "name"/></dd>
+        </d1>
+</body>
+</html>
+
+<!-- worksのところが多分ポートフォリオの部分になる 
+javasriptでスクロール時にフワッとさせたい。
+Blogは多分自分でワードプレスで作る。-->
